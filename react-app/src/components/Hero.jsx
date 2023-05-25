@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-20 overflow-hidden'
+      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-20 overflow-hidden sm:h-[90vh]'
     >
       {/* Header */}
       <div data-aos='fade-right' className='flex flex-col my-10'>
