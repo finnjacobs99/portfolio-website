@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import '../index.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className='sticky top-0 w-full bg-zinc-950 bg-opacity-50 backdrop-blur-md shadow-lg'>
+    <div
+      data-aos='fade-down'
+      className='sticky top-0 w-full bg-zinc-950 bg-opacity-50 backdrop-blur-md shadow-lg z-50'
+    >
       {/* Navbar */}
       <nav className='max-w-screen-xl mx-auto flex justify-between items-center sm:px-16 px-6 py-6'>
         {/* Logo */}
-        <h1 className='font-semibold md:text-[24px] text-[18px]'>
+        <h1 className='font-semibold sm:text-[2rem] text-[24px]'>
           Finn Jacobs
         </h1>
         {/* Navlinks */}
-        <ul className='md:flex hidden'>
+        <ul className='lg:flex hidden text-[18px]'>
           <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
             <a href='#home'>Home</a>
           </li>
@@ -33,15 +42,15 @@ const Navbar = () => {
         </ul>
 
         {/* Menu Toggle */}
-        <button className='md:hidden flex'>
+        <button className='lg:hidden flex'>
           {!toggle ? (
             <HiMenuAlt3
-              className='h-[2rem] w-[2rem]'
+              className='h-[38px] w-[38px]'
               onClick={() => setToggle((prev) => !prev)}
             />
           ) : (
             <HiOutlineX
-              className='h-[2rem] w-[2rem]'
+              className='h-[38px] w-[38px]'
               onClick={() => setToggle((prev) => !prev)}
             />
           )}
@@ -52,7 +61,7 @@ const Navbar = () => {
               toggle ? 'flex' : 'hidden'
             } p-6 bg-zinc-900 absolute top-20 mx-4 my-2 slide-left rounded-md`}
           >
-            <ul className='md:hidden flex flex-col text-center'>
+            <ul className='lg:hidden flex flex-col text-center text-[18px]'>
               <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#home'>Home</a>
               </li>
