@@ -24,14 +24,14 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className='inline-flex flex-col sm:flex-row mt-4 text-lg sm:text-xl'>
-          <a className='inline-flex items-center mr-auto sm:mr-5 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white cursor-pointer mb-2 sm:mb-0'>
+          <a className='inline-flex items-center mr-auto sm:mr-5 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer mb-2 sm:mb-0'>
             Resume
             <HiOutlineDownload className='ml-2' />
           </a>
 
           <a
             href='#about'
-            className='inline-flex items-center mr-5 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white cursor-pointer'
+            className='inline-flex items-center mr-auto sm:mr-0 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
           >
             Learn More
             <HiArrowRight className='ml-2' />

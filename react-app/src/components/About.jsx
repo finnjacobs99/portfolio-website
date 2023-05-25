@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import img from '../assets/about.png';
+import img from '../assets/about1.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,11 +11,11 @@ const About = () => {
   return (
     <section
       id='about'
-      className='max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-start sm:px-16 px-6 py-6 overflow-hidden'
+      className='max-w-screen-xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-start sm:px-16 px-6 py-6 overflow-hidden'
     >
       <div
-        data-aos='fade-right'
-        className='flex flex-col my-10 justify-center w-full'
+        data-aos='fade-left'
+        className='flex flex-col my-10 justify-center w-full ml-5'
       >
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>About Me</h1>
         <p className='text-xl sm:text-[1.5rem] leading-loose'>
@@ -27,8 +27,7 @@ const About = () => {
           version control.
         </p>
       </div>
-
-      <div data-aos='fade-left' className='object-contain'>
+      <div data-aos='fade-right' className='object-contain w-full'>
         <img src={img} />
       </div>
     </section>
