@@ -61,7 +61,10 @@ const Navbar = () => {
               toggle ? 'flex' : 'hidden'
             } p-6 bg-zinc-900 absolute top-20 mx-4 my-2 slide-left rounded-md`}
           >
-            <ul className='lg:hidden flex flex-col text-center text-[1.5rem]'>
+            <ul
+              className='lg:hidden flex flex-col text-center text-[1.5rem]'
+              onClick={() => setToggle((prev) => !prev)}
+            >
               <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#home'>Home</a>
               </li>
