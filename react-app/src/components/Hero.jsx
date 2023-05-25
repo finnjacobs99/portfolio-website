@@ -15,12 +15,12 @@ const Hero = () => {
       className='max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 py-6 overflow-hidden'
     >
       {/* Header */}
-      <div data-aos='fade-right' className='my-10 max-w-screen-sm mx-auto'>
+      <div data-aos='fade-right' className='flex flex-col my-10'>
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>Hi, I'm Finn.</h1>
-        <h1 className='text-xl sm:text-2xl leading-loose'>
+        <p className='text-xl sm:text-[1.5rem] leading-loose'>
           I am a dedicated front-end developer with a passion for cafting
           intuitive and vissually appealing user experiences.
-        </h1>
+        </p>
 
         {/* Buttons */}
         <div className='inline-flex flex-col sm:flex-row mt-4 text-lg sm:text-xl'>
@@ -41,7 +41,7 @@ const Hero = () => {
 
       {/* Hero Image */}
       <div data-aos='fade-left' className='object-fit'>
-        <img src={img} className='' />
+        <img src={img} />
       </div>
     </section>
   );
