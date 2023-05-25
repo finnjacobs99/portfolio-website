@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div
       data-aos='fade-down'
-      className='sticky top-0 w-full bg-zinc-950 bg-opacity-50 backdrop-blur-md shadow-lg z-50'
+      className='sticky top-0 w-full bg-zinc-950 bg-opacity-70 bg-clip-border backdrop-blur-[8px] shadow-lg z-50'
     >
       {/* Navbar */}
       <nav className='max-w-screen-xl mx-auto flex justify-between items-center sm:px-16 px-6 py-6'>
@@ -23,7 +23,7 @@ const Navbar = () => {
           Finn Jacobs
         </h1>
         {/* Navlinks */}
-        <ul className='lg:flex hidden text-[18px]'>
+        <ul className='lg:flex hidden text-[1.5rem]'>
           <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
             <a href='#home'>Home</a>
           </li>
@@ -61,7 +61,7 @@ const Navbar = () => {
               toggle ? 'flex' : 'hidden'
             } p-6 bg-zinc-900 absolute top-20 mx-4 my-2 slide-left rounded-md`}
           >
-            <ul className='lg:hidden flex flex-col text-center text-[18px]'>
+            <ul className='lg:hidden flex flex-col text-center text-[1.5rem]'>
               <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#home'>Home</a>
               </li>
