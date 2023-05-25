@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import '../index.css';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <div
@@ -17,26 +11,26 @@ const Navbar = () => {
       className='sticky top-0 w-full bg-zinc-950 bg-opacity-70 bg-clip-border backdrop-blur-[8px] shadow-lg z-50'
     >
       {/* Navbar */}
-      <nav className='max-w-screen-xl mx-auto flex justify-between items-center sm:px-16 px-6 py-6'>
+      <nav className='max-w-screen-2xl mx-auto flex justify-between items-center sm:px-16 px-6 py-6'>
         {/* Logo */}
         <h1 className='font-semibold sm:text-[2rem] text-[24px]'>
           Finn Jacobs
         </h1>
         {/* Navlinks */}
         <ul className='lg:flex hidden text-[1.5rem]'>
-          <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+          <li className='mr-10 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110'>
             <a href='#home'>Home</a>
           </li>
-          <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+          <li className='mr-10 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110'>
             <a href='#about'>About</a>
           </li>
-          <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+          {/* <li className='mr-10 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110'>
             <a href='#skills'>Skills</a>
-          </li>
-          <li className='mr-10 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+          </li> */}
+          <li className='mr-10 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110'>
             <a href='#projects'>Projects</a>
           </li>
-          <li className=' text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+          <li className=' text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110'>
             <a href='#contact'>Contact</a>
           </li>
         </ul>
@@ -71,9 +65,9 @@ const Navbar = () => {
               <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#about'>About</a>
               </li>
-              <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
+              {/* <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#skills'>Skills</a>
-              </li>
+              </li> */}
               <li className='mb-4 text-stone-400 transition-colors ease-in-out duration-300 hover:text-white'>
                 <a href='#projects'>Projects</a>
               </li>

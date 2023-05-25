@@ -1,18 +1,12 @@
 import React, { useEffect } from 'react';
 import img from '../assets/hero.png';
 import { HiArrowRight, HiOutlineDownload } from 'react-icons/hi';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const Hero = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <section
       id='home'
-      className='max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-20 overflow-hidden'
+      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-20 overflow-hidden'
     >
       {/* Header */}
       <div data-aos='fade-right' className='flex flex-col my-10'>
