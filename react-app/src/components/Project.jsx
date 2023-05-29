@@ -2,7 +2,10 @@ import React from 'react';
 
 const Project = ({ img, title, description, demo, code, tags }) => {
   return (
-    <div data-aos='fade-up' className='bg-neutral-800 px-8 py-10 sm:my-5'>
+    <div
+      data-aos='fade-up'
+      className='bg-neutral-800 sm:px-8 px-0 py-10 sm:my-5 rounded-lg'
+    >
       {/* Img */}
       <div className='mb-7 overflow-hidden'>
         <img alt='img' className='w-[192px] h-[108px] bg-neutral-900' />
@@ -26,7 +29,7 @@ const Project = ({ img, title, description, demo, code, tags }) => {
         {tags.map((tag, index) => (
           <p
             key={index}
-            className='flex justify-center items-center bg-neutral-200 py-3 px-6 mr-4 mb-4'
+            className='flex justify-center items-center bg-neutral-200 py-3 px-6 mr-4 mb-4 rounded-lg'
           >
             {tag}
           </p>

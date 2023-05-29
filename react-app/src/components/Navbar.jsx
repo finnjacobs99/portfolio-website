@@ -26,7 +26,7 @@ const Navbar = () => {
             <a href='#about'>About</a>
           </li>
           <li className='mr-10 transition ease-in-out duration-300 hover:text-neutral-200 hover:scale-110'>
-            <a href='#projects'>Projects</a>
+            <a href='#projects'>My Work</a>
           </li>
           <li className=' transition ease-in-out duration-300 hover:text-neutral-200 hover:scale-110'>
             <a href='#contact'>Contact</a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? 'flex' : 'hidden'
-            } p-6 bg-neutral-900 absolute top-20 mx-4 my-2 slide-left rounded-md`}
+            } p-6 bg-neutral-900 absolute top-20 mx-4 my-2 slide-left rounded-md w-full`}
           >
             <ul
               className='lg:hidden flex flex-col text-center text-[1.5rem] text-neutral-400'
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <a href='#about'>About</a>
               </li>
               <li className='mb-4 transition-colors ease-in-out duration-300 hover:text-neutral-200'>
-                <a href='#projects'>Projects</a>
+                <a href='#projects'>My Work</a>
               </li>
               <li className='transition-colors ease-in-out duration-300 hover:text-neutral-200'>
                 <a href='#contact'>Contact</a>
