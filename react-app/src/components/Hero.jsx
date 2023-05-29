@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import img from '../assets/hero.png';
 import { HiArrowRight, HiOutlineDownload } from 'react-icons/hi';
 
@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-20 overflow-hidden sm:h-[90vh]'
+      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-14 py-6 overflow-hidden lg:h-[90vh]'
     >
-      {/* Header */}
+      {/* Text */}
       <div data-aos='fade-right' className='flex flex-col my-10'>
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>Hi, I'm Finn.</h1>
         <p className='text-xl sm:text-[1.5rem] leading-loose'>
@@ -17,17 +17,17 @@ const Hero = () => {
         </p>
 
         {/* Buttons */}
-        <div className='inline-flex flex-col sm:flex-row mt-4 text-lg sm:text-xl'>
-          <a className='inline-flex items-center mr-auto sm:mr-5 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer mb-2 sm:mb-0'>
+        <div className='inline-flex flex-col sm:flex-row mt-4 text-xl sm:text-[1.5rem]  text-neutral-400'>
+          <a className='inline-flex items-center mr-auto sm:mr-5 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer mb-2 sm:mb-0'>
             Resume
             <HiOutlineDownload className='ml-2' />
           </a>
 
           <a
-            href='#about'
-            className='inline-flex items-center mr-auto sm:mr-0 text-stone-400 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
+            href='#projects'
+            className='inline-flex items-center mr-auto sm:mr-0 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
           >
-            Learn More
+            See my work
             <HiArrowRight className='ml-2' />
           </a>
         </div>

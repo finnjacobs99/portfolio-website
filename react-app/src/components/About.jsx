@@ -5,8 +5,9 @@ const About = () => {
   return (
     <section
       id='about'
-      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-start sm:px-16 px-6 py-6 overflow-hidden'
+      className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-start sm:px-16 px-6 md:pb-14 md:pt-0 py-6 overflow-hidden'
     >
+      {/* Text */}
       <div
         data-aos='fade-left'
         className='flex flex-col my-10 justify-center w-full ml-5'
@@ -20,6 +21,8 @@ const About = () => {
           build innovative solutions and contribute to meaningful projects.
         </p>
       </div>
+
+      {/* Image */}
       <div data-aos='fade-right' className='object-contain w-full'>
         <img src={img} />
       </div>

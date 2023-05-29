@@ -9,11 +9,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className='w-full text-white bg-zinc-800'>
+    <div className='w-full text-neutral-200 bg-neutral-700'>
       <Navbar />
       <Hero />
       <About />
-      {/* <Skills /> */}
       <Projects />
       <Contact />
     </div>
