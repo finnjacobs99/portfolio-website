@@ -13,14 +13,11 @@ const Projects = () => {
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>My Work</h1>
       </div>
 
+      {/* Projects */}
       <div className='flex flex-col lg:flex-row flex-wrap justify-between'>
         {projectList.map((project) => (
           <Project key={project.id} {...project} />
         ))}
-        {/* <Project />
-        <Project />
-        <Project />
-        <Project /> */}
       </div>
     </section>
   );

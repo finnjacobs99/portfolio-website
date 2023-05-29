@@ -9,7 +9,11 @@ const Hero = () => {
       className='max-w-screen-2xl mx-auto flex flex-col lg:flex-row justify-between items-center sm:px-16 px-6 md:py-14 py-6 overflow-hidden lg:h-[90vh]'
     >
       {/* Text */}
-      <div data-aos='fade-right' className='flex flex-col my-10'>
+      <div
+        data-aos='fade-right'
+        data-aos-offset='100'
+        className='flex flex-col my-10'
+      >
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>Hi, I'm Finn.</h1>
         <p className='text-xl sm:text-[1.5rem] leading-loose'>
           I am a dedicated front-end developer with a passion for cafting
@@ -34,7 +38,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Image */}
-      <div data-aos='fade-left' className='object-fit'>
+      <div data-aos='fade-left' data-aos-offset='100' className='object-fit'>
         <img src={img} />
       </div>
     </section>

@@ -10,6 +10,7 @@ const About = () => {
       {/* Text */}
       <div
         data-aos='fade-left'
+        data-aos-offset='100'
         className='flex flex-col my-10 justify-center w-full ml-5'
       >
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>About Me</h1>
@@ -23,7 +24,11 @@ const About = () => {
       </div>
 
       {/* Image */}
-      <div data-aos='fade-right' className='object-contain w-full'>
+      <div
+        data-aos='fade-right'
+        data-aos-offset='100'
+        className='object-contain w-full'
+      >
         <img src={img} />
       </div>
     </section>
