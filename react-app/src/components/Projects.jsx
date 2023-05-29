@@ -14,7 +14,7 @@ const Projects = () => {
       </div>
 
       {/* Projects */}
-      <div className='flex flex-col lg:flex-row flex-wrap justify-between'>
+      <div className='flex flex-col md:flex-row flex-wrap justify-between items-center'>
         {projectList.map((project) => (
           <Project key={project.id} {...project} />
         ))}

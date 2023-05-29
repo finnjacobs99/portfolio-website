@@ -5,7 +5,7 @@ const Project = ({ img, title, description, demo, code, tags }) => {
     <div
       data-aos='fade-up'
       data-aos-offset='100'
-      className='bg-neutral-800 sm:px-8 px-0 pt-10 pb-6 sm:my-5 sm:overflow-hidden sm:shadow-xl rounded-lg'
+      className='bg-neutral-800 sm:px-8 px-0 pt-10 pb-6 sm:my-5 sm:overflow-hidden sm:shadow-xl rounded-lg 2xl:max-w-2xl'
     >
       {/* Img */}
       <div
@@ -55,7 +55,7 @@ const Project = ({ img, title, description, demo, code, tags }) => {
           <p
             key={index}
             data-aos='fade-right'
-            data-aos-delay={`${index * 100 + 400}`}
+            data-aos-delay={`${index * 100 + 500}`}
             data-aos-offset='0'
             className='flex justify-center items-center bg-neutral-200 py-3 px-6 mr-4 mb-4 rounded-lg'
           >
