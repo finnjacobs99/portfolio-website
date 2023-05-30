@@ -5,19 +5,19 @@ const Project = ({ img, title, description, demo, code, tags }) => {
     <div
       data-aos='fade-up'
       data-aos-offset='100'
-      className='bg-neutral-800 sm:px-8 px-0 pt-10 pb-6 sm:my-5 sm:overflow-hidden sm:shadow-xl rounded-lg 2xl:max-w-2xl'
+      className='flex flex-col bg-neutral-800 sm:px-8 px-0 pt-10 pb-6 sm:my-5 sm:overflow-hidden sm:shadow-xl rounded-xl 2xl:max-w-2xl'
     >
-      {/* Img */}
-      <div
-        data-aos='fade-right'
-        data-aos-offset='0'
-        data-aos-delay='100'
-        className='mb-7 overflow-hidden'
-      >
-        <img alt='img' className='w-[192px] h-[108px] bg-neutral-900' />
-      </div>
-
       <div className='flex flex-col'>
+        {/* Img */}
+        <img
+          src={img}
+          alt='img'
+          data-aos='fade-right'
+          data-aos-offset='0'
+          data-aos-delay='100'
+          className=' w-full h-[300px] rounded-xl bg-neutral-900 mb-7 overflow-hidden object-cover'
+        />
+
         {/* Title */}
         <h1
           data-aos='fade-right'
@@ -57,7 +57,7 @@ const Project = ({ img, title, description, demo, code, tags }) => {
             data-aos='fade-right'
             data-aos-delay={`${index * 100 + 500}`}
             data-aos-offset='0'
-            className='flex justify-center items-center bg-neutral-200 py-3 px-6 mr-4 mb-4 rounded-lg'
+            className='flex justify-center items-center bg-neutral-200 py-3 px-6 mr-4 mb-4 rounded-xl'
           >
             {tag}
           </p>
