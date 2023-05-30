@@ -9,7 +9,7 @@ const About = () => {
     >
       {/* Text */}
       <div
-        data-aos='fade-left'
+        data-aos='fade-up'
         data-aos-offset='100'
         className='flex flex-col my-10 justify-center w-full ml-5'
       >
@@ -25,7 +25,7 @@ const About = () => {
 
       {/* Image */}
       <div
-        data-aos='fade-right'
+        data-aos='fade-up'
         data-aos-offset='100'
         className='object-contain w-full'
       >
