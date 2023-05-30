@@ -12,7 +12,7 @@ export const projectList = [
     tags: ['Javascript', 'React Native', 'Expo Go'],
   },
   {
-    id: 'project-1',
+    id: 'project-2',
     img: p1,
     title: 'Waste Watcher',
     description:
@@ -22,7 +22,7 @@ export const projectList = [
     tags: ['Javascript', 'React Native', 'Expo Go'],
   },
   {
-    id: 'project-1',
+    id: 'project-3',
     img: p1,
     title: 'Waste Watcher',
     description:
@@ -32,7 +32,7 @@ export const projectList = [
     tags: ['Javascript', 'React Native', 'Expo Go'],
   },
   {
-    id: 'project-1',
+    id: 'project-4',
     img: p1,
     title: 'Waste Watcher',
     description:
@@ -42,7 +42,7 @@ export const projectList = [
     tags: ['Javascript', 'React Native', 'Expo Go'],
   },
   {
-    id: 'project-1',
+    id: 'project-5',
     img: p1,
     title: 'Waste Watcher',
     description:

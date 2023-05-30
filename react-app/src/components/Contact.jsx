@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { IoIosSend } from 'react-icons/io';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_adzutpb',
+        'contact_form',
+        form.current,
+        'yjAicNKr1H1jc4YwZ'
+      )
+      .then(
+        (result) => {
+          alert('Email Sent');
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <section
       id='contact'
@@ -15,40 +40,63 @@ const Contact = () => {
         </h1>
 
         {/* Form */}
-        <div className='flex flex-col w-full'>
+        <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full'>
+          {/* Name */}
           <div data-aos='fade-up' data-aos-delay='50' className='flex flex-col'>
-            <h1 className='md:text-2xl text-xl mb-2'>Name</h1>
-            <input className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl' />
+            <label className='md:text-2xl text-xl mb-2'>Name</label>
+            <input
+              type='text'
+              name='user_name'
+              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+            />
           </div>
+
+          {/* Email */}
           <div
             data-aos='fade-up'
             data-aos-delay='100'
             className='flex flex-col'
           >
-            <h1 className='md:text-2xl text-xl mb-2'>Email</h1>
-            <input className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl' />
+            <label className='md:text-2xl text-xl mb-2'>Email</label>
+            <input
+              type='email'
+              name='user_email'
+              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+            />
           </div>
+
+          {/* Subject */}
           <div
             data-aos='fade-up'
             data-aos-delay='150'
             className='flex flex-col'
           >
-            <h1 className='md:text-2xl text-xl mb-2'>Subject</h1>
-            <input className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl' />
+            <label className='md:text-2xl text-xl mb-2'>Subject</label>
+            <input
+              type='text'
+              name='subject'
+              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+            />
           </div>
+
+          {/* Message */}
           <div
             data-aos='fade-up'
             data-aos-delay='200'
             className='flex flex-col'
           >
-            <h1 className='md:text-2xl text-xl mb-2'>Message</h1>
-            <textarea className='bg-neutral-800 mb-7 h-64 outline-none p-6 rounded-xl md:text-xl leading-loose' />
+            <label className='md:text-2xl text-xl mb-2'>Message</label>
+            <textarea
+              name='message'
+              className='bg-neutral-800 mb-7 h-64 outline-none p-6 rounded-xl md:text-xl leading-loose'
+            />
           </div>
 
           {/* Buttons */}
           <div className='flex flex-col lg:flex-row justify-between text-xl font-medium'>
             {/* Send */}
             <button
+              type='submit'
               data-aos='fade-up'
               data-aos-delay='250'
               className='bg-neutral-800 p-6 mb-5 lg:mb-0 rounded-xl lg:w-[32%] flex justify-center items-center'
@@ -81,7 +129,7 @@ const Contact = () => {
               <AiFillLinkedin className='h-[24px] w-[24px]' />
             </a>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
