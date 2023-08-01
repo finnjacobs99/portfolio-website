@@ -1,5 +1,5 @@
 import wasteWatcherImg from '../assets/project-1.jpg';
-import velocikeyImg from '../assets/vkey7.PNG';
+import velocikeyImg from '../assets/vkey7.png';
 
 export const projectList = [
   {
