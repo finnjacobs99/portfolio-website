@@ -1,6 +1,7 @@
 import React from 'react';
+import { HiOutlineCode, HiExternalLink } from 'react-icons/hi';
 
-const Project = ({ img, title, description, demo, code, tags }) => {
+const Project = ({ img, title, description, demo, website, code, tags }) => {
   return (
     <div
       data-aos='fade-up'
@@ -12,9 +13,6 @@ const Project = ({ img, title, description, demo, code, tags }) => {
         <img
           src={img}
           alt='img'
-          // data-aos='fade-up'
-          // data-aos-offset='0'
-          // data-aos-delay='100'
           className=' w-full h-[300px] rounded-xl bg-neutral-900 mb-7 overflow-hidden object-cover'
         />
 
@@ -27,6 +25,7 @@ const Project = ({ img, title, description, demo, code, tags }) => {
         >
           {title}
         </h1>
+
         {/* Description */}
         <p
           data-aos='fade-up'
@@ -36,16 +35,69 @@ const Project = ({ img, title, description, demo, code, tags }) => {
         >
           {description}
         </p>
+
         {/* Link(s) */}
         <div
-          data-aos='fade-up'
-          data-aos-offset='0'
-          data-aos-delay='200'
-          className='mb-7 text-xl text-neutral-400'
+          className={`flex flex-wrap mb-7 ${
+            !demo && !website && !code ? 'hidden' : ''
+          }`}
         >
-          <a className='inline-flex transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'>
-            View Demo
-          </a>
+          {/* Demo */}
+          {!demo ? null : (
+            <div
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-delay='200'
+              className='mr-5 text-xl text-neutral-400'
+            >
+              <a
+                href={demo}
+                target='_blank'
+                className='flex items-center justify-center transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
+              >
+                <span>Demo</span>
+                <HiExternalLink className='text-xl text-center ml-1' />
+              </a>
+            </div>
+          )}
+
+          {/* Website */}
+          {!website ? null : (
+            <div
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-delay='200'
+              className='mr-5 text-xl text-neutral-400'
+            >
+              <a
+                href={website}
+                target='_blank'
+                className='flex items-center justify-center transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
+              >
+                <span>Website</span>
+                <HiExternalLink className='text-xl text-center ml-1' />
+              </a>
+            </div>
+          )}
+
+          {/* Code */}
+          {!code ? null : (
+            <div
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-delay='250'
+              className='mr-5 text-xl text-neutral-400'
+            >
+              <a
+                href={code}
+                target='_blank'
+                className='flex items-center justify-center transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
+              >
+                <span>Code</span>
+                <HiOutlineCode className='text-xl text-center ml-2' />
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
