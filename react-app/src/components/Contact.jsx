@@ -43,11 +43,12 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full'>
           {/* Name */}
           <div data-aos='fade-up' data-aos-delay='50' className='flex flex-col'>
-            <label className='md:text-2xl text-xl mb-2'>Name</label>
+            {/* <label className='md:text-2xl text-xl mb-2'>Name</label> */}
             <input
+              placeholder='Name'
               type='text'
               name='user_name'
-              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+              className='bg-neutral-800 mb-7 outline-none p-6 rounded-xl md:text-xl'
             />
           </div>
 
@@ -57,11 +58,12 @@ const Contact = () => {
             data-aos-delay='100'
             className='flex flex-col'
           >
-            <label className='md:text-2xl text-xl mb-2'>Email</label>
+            {/* <label className='md:text-2xl text-xl mb-2'>Email</label> */}
             <input
+              placeholder='Email'
               type='email'
               name='user_email'
-              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+              className='bg-neutral-800 mb-7 outline-none p-6 rounded-xl md:text-xl'
             />
           </div>
 
@@ -71,11 +73,12 @@ const Contact = () => {
             data-aos-delay='150'
             className='flex flex-col'
           >
-            <label className='md:text-2xl text-xl mb-2'>Subject</label>
+            {/* <label className='md:text-2xl text-xl mb-2'>Subject</label> */}
             <input
+              placeholder='Subject'
               type='text'
               name='subject'
-              className='bg-neutral-800 mb-5 outline-none p-6 rounded-xl md:text-xl'
+              className='bg-neutral-800 mb-7 outline-none p-6 rounded-xl md:text-xl'
             />
           </div>
 
@@ -85,21 +88,22 @@ const Contact = () => {
             data-aos-delay='200'
             className='flex flex-col'
           >
-            <label className='md:text-2xl text-xl mb-2'>Message</label>
+            {/* <label className='md:text-2xl text-xl mb-2'>Message</label> */}
             <textarea
+              placeholder='Message'
               name='message'
               className='bg-neutral-800 mb-7 h-64 outline-none p-6 rounded-xl md:text-xl leading-loose'
             />
           </div>
 
           {/* Buttons */}
-          <div className='flex flex-col lg:flex-row justify-between text-xl font-medium'>
+          <div className='flex flex-row justify-start text-xl font-medium'>
             {/* Send */}
             <button
               type='submit'
               data-aos='fade-up'
               data-aos-delay='250'
-              className='bg-neutral-800 p-6 mb-5 lg:mb-0 rounded-xl lg:w-[32%] flex justify-center items-center'
+              className='bg-neutral-800 p-6 mb-5 lg:mb-0 rounded-xl flex justify-center items-center flex-grow max-w-lg'
             >
               <p className='mr-2'>Send</p>
               <IoIosSend className='h-[24px] w-[24px]' />
@@ -111,9 +115,8 @@ const Contact = () => {
               target='_blank'
               data-aos='fade-up'
               data-aos-delay='300'
-              className='bg-neutral-800 p-6 mb-5 lg:mb-0 rounded-xl lg:w-[32%] flex justify-center items-center cursor-pointer'
+              className='bg-neutral-800 p-6 mb-5 lg:mb-0 ml-5 rounded-xl w-1/8 flex justify-center items-center cursor-pointer'
             >
-              <p className='mr-2'>Github</p>
               <AiFillGithub className='h-[24px] w-[24px]' />
             </a>
 
@@ -123,9 +126,8 @@ const Contact = () => {
               target='_blank'
               data-aos='fade-up'
               data-aos-delay='350'
-              className='bg-neutral-800 p-6 mb-5 lg:mb-0 rounded-xl lg:w-[32%] flex justify-center items-center cursor-pointer'
+              className='bg-neutral-800 p-6 mb-5 lg:mb-0 ml-5 rounded-xl w-1/8 flex justify-center items-center cursor-pointer'
             >
-              <p className='mr-2'>LinkedIn</p>
               <AiFillLinkedin className='h-[24px] w-[24px]' />
             </a>
           </div>
