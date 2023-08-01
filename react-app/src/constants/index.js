@@ -1,54 +1,26 @@
-import p1 from '../assets/project-1.png';
+import wasteWatcherImg from '../assets/project-1.jpg';
+import velocikeyImg from '../assets/vkey7.PNG';
 
 export const projectList = [
   {
     id: 'project-1',
-    img: p1,
-    title: 'Waste Watcher',
+    img: velocikeyImg,
+    title: 'Velocikey',
     description:
-      'This is a descriptions for the waste watcher app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium rem placeat molestiae omnis amet in. Eligendi voluptate dolorum quaerat expedita excepturi perferendis nesciunt, veritatis in saepe. Sit, ab rerum? ',
+      'A typing test platform that combines a minimalist design with customizable features. Velocikey lets you tailor your experience with variable test lengths and multiple color themes. Witness your improvement over time with personal result tracking. Engage in competition as you see how you rank against other users and strive to reach the top of the global leaderboard.',
     demo: '',
-    code: '',
-    tags: ['Javascript', 'React Native', 'Expo Go'],
+    website: 'https://velocikey.vercel.app/',
+    code: 'https://github.com/finnjacobs99/velocikey',
+    tags: ['React', , 'Firebase', 'Javascript', 'Tailwind CSS'],
   },
   {
     id: 'project-2',
-    img: p1,
-    title: 'Waste Watcher',
-    description:
-      'This is a descriptions for the waste watcher app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium rem placeat molestiae omnis amet in. Eligendi voluptate dolorum quaerat expedita excepturi perferendis nesciunt, veritatis in saepe. Sit, ab rerum?',
-    demo: '',
-    code: '',
-    tags: ['Javascript', 'React Native', 'Expo Go'],
-  },
-  {
-    id: 'project-3',
-    img: p1,
-    title: 'Waste Watcher',
-    description:
-      'This is a descriptions for the waste watcher app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium rem placeat molestiae omnis amet in. Eligendi voluptate dolorum quaerat expedita excepturi perferendis nesciunt, veritatis in saepe. Sit, ab rerum?',
-    demo: '',
-    code: '',
-    tags: ['Javascript', 'React Native', 'Expo Go'],
-  },
-  {
-    id: 'project-4',
-    img: p1,
-    title: 'Waste Watcher',
-    description:
-      'This is a descriptions for the waste watcher app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium rem placeat molestiae omnis amet in. Eligendi voluptate dolorum quaerat expedita excepturi perferendis nesciunt, veritatis in saepe. Sit, ab rerum?',
-    demo: '',
-    code: '',
-    tags: ['Javascript', 'React Native', 'Expo Go'],
-  },
-  {
-    id: 'project-5',
-    img: p1,
-    title: 'Waste Watcher',
-    description:
-      'This is a descriptions for the waste watcher app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium rem placeat molestiae omnis amet in. Eligendi voluptate dolorum quaerat expedita excepturi perferendis nesciunt, veritatis in saepe. Sit, ab rerum?',
-    demo: '',
-    code: '',
-    tags: ['Javascript', 'React Native', 'Expo Go'],
+    img: wasteWatcherImg,
+    title: 'Waste Watcher UI',
+    description: `A cross platform mobile application for tracking household food waste. The Waste Watcher user interface was derived from a multitude of requirements gathered from the University of Maine Mitchell Center for Sustainability Solutions. It presents an array of features ranging from waste tracking and habit analysis/visualization, to account customization and leaderboards ranking user's waste reduction.`,
+    demo: 'https://www.youtube.com/watch?v=nh34OQHx2WI',
+    website: '',
+    code: 'https://github.com/finnjacobs99/Waste-Watcher',
+    tags: ['React Native', 'Javascript', 'Expo Go', 'Jest'],
   },
 ];
