@@ -5,7 +5,7 @@ const Project = ({ img, title, description, demo, website, code, tags }) => {
   return (
     <div
       data-aos='fade-up'
-      data-aos-offset='100'
+      data-aos-offset='0'
       className='flex flex-col bg-neutral-800 sm:px-8 px-0 pt-10 pb-6 sm:my-5 sm:overflow-hidden sm:shadow-xl rounded-xl 2xl:max-w-[49%]'
     >
       <div className='flex flex-col'>
