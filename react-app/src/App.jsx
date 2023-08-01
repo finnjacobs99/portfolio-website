@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { About, Contact, Hero, Navbar, Projects, Skills } from './components';
+import { About, Contact, Hero, Navbar, Projects, Skills, Footer } from './components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -15,6 +15,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
