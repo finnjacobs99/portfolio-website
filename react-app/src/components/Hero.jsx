@@ -16,8 +16,8 @@ const Hero = () => {
       >
         <h1 className='text-4xl sm:text-6xl font-bold mb-5'>Hi, I'm Finn.</h1>
         <p className='text-xl sm:text-[1.5rem] leading-loose'>
-          I am a dedicated front-end developer with a passion for cafting
-          intuitive and vissually appealing user experiences.
+          I am a dedicated front-end developer with a passion for crafting
+          intuitive and visually appealing user experiences.
         </p>
 
         {/* Buttons */}
