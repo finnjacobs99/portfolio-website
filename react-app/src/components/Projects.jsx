@@ -10,7 +10,7 @@ const Projects = () => {
     >
       {/* Header */}
       <div data-aos='fade-up'>
-        <h1 className='text-4xl sm:text-6xl font-bold mb-5'>My Work</h1>
+        <h1 className='text-4xl sm:text-6xl font-bold mb-5'>Projects</h1>
       </div>
 
       {/* Projects */}

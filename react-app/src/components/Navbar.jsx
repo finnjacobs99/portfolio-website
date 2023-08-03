@@ -26,7 +26,7 @@ const Navbar = () => {
             <a href='#about'>About</a>
           </li>
           <li className='mr-10 transition ease-in-out duration-300 hover:text-neutral-200 hover:scale-110'>
-            <a href='#projects'>My Work</a>
+            <a href='#projects'>Projects</a>
           </li>
           <li className=' transition ease-in-out duration-300 hover:text-neutral-200 hover:scale-110'>
             <a href='#contact'>Contact</a>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <a href='#about'>About</a>
               </li>
               <li className='mb-4 transition-colors ease-in-out duration-300 hover:text-neutral-200'>
-                <a href='#projects'>My Work</a>
+                <a href='#projects'>Projects</a>
               </li>
               <li className='transition-colors ease-in-out duration-300 hover:text-neutral-200'>
                 <a href='#contact'>Contact</a>
