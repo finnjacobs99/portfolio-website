@@ -42,15 +42,14 @@ const Contact = () => {
         {/* Form */}
         <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full'>
           {/* Name */}
-          <div data-aos='fade-up' data-aos-delay='50' className='flex flex-col'>
-            {/* <label className='md:text-2xl text-xl mb-2'>Name</label> */}
+          {/* <div data-aos='fade-up' data-aos-delay='50' className='flex flex-col'>
             <input
               placeholder='Name'
               type='text'
               name='user_name'
               className='bg-neutral-800 mb-7 outline-none p-6 rounded-xl md:text-xl'
             />
-          </div>
+          </div> */}
 
           {/* Email */}
           <div
@@ -58,7 +57,6 @@ const Contact = () => {
             data-aos-delay='100'
             className='flex flex-col'
           >
-            {/* <label className='md:text-2xl text-xl mb-2'>Email</label> */}
             <input
               placeholder='Email'
               type='email'
@@ -73,7 +71,6 @@ const Contact = () => {
             data-aos-delay='150'
             className='flex flex-col'
           >
-            {/* <label className='md:text-2xl text-xl mb-2'>Subject</label> */}
             <input
               placeholder='Subject'
               type='text'
@@ -117,7 +114,7 @@ const Contact = () => {
               data-aos-delay='300'
               className='bg-neutral-800 p-6 mb-5 lg:mb-0 ml-5 rounded-xl w-1/8 flex justify-center items-center cursor-pointer'
             >
-              <AiFillGithub className='h-[24px] w-[24px]' />
+              <AiFillGithub className='text-2xl sm:text-3xl' />
             </a>
 
             {/* LinkedIn */}
@@ -128,7 +125,7 @@ const Contact = () => {
               data-aos-delay='350'
               className='bg-neutral-800 p-6 mb-5 lg:mb-0 ml-5 rounded-xl w-1/8 flex justify-center items-center cursor-pointer'
             >
-              <AiFillLinkedin className='h-[24px] w-[24px]' />
+              <AiFillLinkedin className='text-2xl sm:text-3xl' />
             </a>
           </div>
         </form>
