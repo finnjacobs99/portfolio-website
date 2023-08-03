@@ -94,7 +94,7 @@ const Project = ({ img, title, description, demo, website, code, tags }) => {
                 className='flex items-center justify-center transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer'
               >
                 <span>Code</span>
-                <HiOutlineCode className='text-xl text-center ml-2' />
+                <HiOutlineCode className='text-xl text-center ml-1.5' />
               </a>
             </div>
           )}
