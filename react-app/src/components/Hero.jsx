@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../assets/hero.png';
+import resume from '../assets/resume.pdf';
 import { HiArrowRight, HiOutlineDownload } from 'react-icons/hi';
 
 const Hero = () => {
@@ -22,7 +23,11 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className='inline-flex flex-col sm:flex-row mt-4 text-xl sm:text-[1.5rem]  text-neutral-400'>
-          <a className='inline-flex items-center mr-auto sm:mr-5 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer mb-2 sm:mb-0'>
+          <a
+            href={resume}
+            target='_blank'
+            className='inline-flex items-center mr-auto sm:mr-5 transition ease-in-out duration-300 hover:text-white hover:scale-110 cursor-pointer mb-2 sm:mb-0'
+          >
             Resume
             <HiOutlineDownload className='ml-2' />
           </a>
